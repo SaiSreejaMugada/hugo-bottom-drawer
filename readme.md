@@ -1,4 +1,4 @@
-# React Native Animated Bottom Drawer
+# Hugo Bottom Drawer
 
 A lightweight and highly performant bottom drawer for react native
 
@@ -17,13 +17,13 @@ A lightweight and highly performant bottom drawer for react native
 using npm
 
 ```sh
-npm i react-native-animated-bottom-drawer
+npm i hugo-bottom-drawer
 ```
 
 using yarn
 
 ```sh
-yarn add react-native-animated-bottom-drawer
+yarn add hugo-bottom-drawer
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ import React, {useRef} from 'react';
 import {View, Text, StyleSheet, Button, SafeAreaView} from 'react-native';
 import BottomDrawer, {
   BottomDrawerMethods,
-} from 'react-native-animated-bottom-drawer';
+} from 'hugo-bottom-drawer';
 
 const App = () => {
   // ref
