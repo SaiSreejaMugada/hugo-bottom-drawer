@@ -1,5 +1,5 @@
 {
-  "name": "react-native-animated-bottom-drawer",
+  "name": "hugo-bottom-drawer",
   "version": "0.0.23",
   "peerDependencies": {
     "react": "*",
@@ -21,7 +21,7 @@
   "jest": {
     "preset": "react-native"
   },
-  "description": "A lightweight, highly performant and animated bottom drawer for react native",
+  "description": "A modified version of react-native-animated-bottom-drawer",
   "main": "index.ts",
   "types": "index.d.ts",
   "keywords": [
@@ -31,8 +31,8 @@
     "react"
   ],
   "repository": {
-    "url": "https://github.com/AtharvaDeolalikar/react-native-animated-bottom-drawer"
+    "url": "https://github.com/SaiSreejaMugada/hugo-bottom-drawer"
   },
-  "author": "Atharva Deolalikar",
+  "author": "Sreeja Mugada",
   "license": "ISC"
 }
