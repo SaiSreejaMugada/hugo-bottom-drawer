@@ -8,10 +8,8 @@ import React, {
 } from 'react';
 import {
   View,
-  Modal,
   Animated,
   PanResponder,
-  Pressable,
   Easing,
   Keyboard,
 } from 'react-native';
@@ -225,29 +223,7 @@ const BottomDrawer: ForwardRefRenderFunction<
   };
 
   return (
-    <Modal
-      transparent
-      statusBarTranslucent
-      visible={modalVisible}
-      onRequestClose={() => {
-        handleKeyboardAndDrawerClose('backPress', closeOnPressBack);
-      }}>
-      <Animated.View
-        style={{
-          opacity: animatedHeight.interpolate({
-            inputRange: [screenHeight - lastPosition.current, screenHeight],
-            outputRange: [backdropOpacity, 0],
-            extrapolate: 'clamp',
-          }),
-          flex: 1,
-        }}>
-        <Pressable
-          style={{flex: 1, backgroundColor: backdropColor}}
-          onPress={() => {
-            handleKeyboardAndDrawerClose('backDrop', closeOnBackdropPress);
-          }}
-        />
-      </Animated.View>
+    <View>
       <Animated.View
         {...(gestureMode === 'content' && panResponder.panHandlers)}
         style={[
@@ -264,7 +240,7 @@ const BottomDrawer: ForwardRefRenderFunction<
           {children}
         </BottomSheetContext.Provider>
       </Animated.View>
-    </Modal>
+    </View>
   );
 };
 
